@@ -1,0 +1,16 @@
+{
+  "name": "pruebaidcb",
+  "version": "1.0.0",
+  "description": "Prueba para IDBC",
+  "author": "Ing. Andrés Díaz",
+  "repository": {
+  	"type": "git",
+  	"url": "https://barbaeguama@bitbucket.org/barbaeguama/pruebaidbc.git"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-connect": "^5.0.0",
+    "gulp-load-plugins": "^1.5.0"
+  }
+}

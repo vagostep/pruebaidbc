@@ -1,0 +1,15 @@
+{
+  "name": "pruebaidcb",
+  "version": "1.0.0",
+  "description": "Prueba para IDBC",
+  "author": "Ing. Andrés Díaz",
+  "repository": {
+  	"type": "git",
+  	"url": "https://barbaeguama@bitbucket.org/barbaeguama/pruebaidbc.git"
+  },
+  "dependencies": {
+    "angular": "1.6.2",
+    "jquery": "^3.1.1",
+    "bootstrap": "^3.3.7"
+  }
+}
