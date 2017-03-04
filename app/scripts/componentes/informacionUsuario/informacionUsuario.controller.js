@@ -40,5 +40,20 @@
         * Tipo de usuario activo.
         **/
         vm.tipoUsuario = "Administrador";
+
+        /**
+        * @ngdoc property
+        * @name informacionUsuario.controller:NavBarController#sociales 
+        * @propertyOf informacionUsuario.controller:NavBarController
+        * @description
+        *
+        * Objeto que contiene toda la información social del usuario de la aplicación.
+        **/
+        vm.sociales = 
+        [
+            {nombre: "amigos", valor: "26k", nuevos: "+14", icono: "person"},
+            {nombre: "compartidos", valor: "1095", nuevos: "+56", icono: "share"},
+            {nombre: "vistas", valor: "428", nuevos:"+38", icono: "visibility"}
+        ];
     }
 })();
