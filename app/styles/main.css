@@ -81,3 +81,10 @@ ul {
     margin-top: 5px;
     color: #53d769;
 }
+
+@media (max-width:892px) {
+
+	.usuario-nombre {
+		display: none;
+	}
+}
