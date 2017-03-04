@@ -4,8 +4,8 @@
   "description": "Prueba para IDBC",
   "author": "Ing. Andrés Díaz",
   "repository": {
-  	"type": "git",
-  	"url": "https://barbaeguama@bitbucket.org/barbaeguama/pruebaidbc.git"
+    "type": "git",
+    "url": "https://barbaeguama@bitbucket.org/barbaeguama/pruebaidbc.git"
   },
   "dependencies": {
     "angular": "1.6.2",
