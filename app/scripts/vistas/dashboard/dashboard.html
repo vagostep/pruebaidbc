@@ -1,0 +1,77 @@
+<section class="contenedor-dashboard">
+
+	<header class="dashboard-header">
+
+		<div class="dashboard-header-nav">
+
+			<h1 class="dashboard-header-titulo">
+				<i class="fa fa-home fa-fw"></i>
+				<span>Dashboard</span>
+			</h1>
+
+			<ul class="dashboard-header-subtitulos">
+				<li><a href="#" onclick="return false;" class="dashboard-header-subtitulos-link">Home</a></li>
+				<li><a href="#" onclick="return false;" class="dashboard-header-subtitulos-link">Dashboard</a></li>
+			</ul>
+
+			<div class="dashboard-header-fechas">
+
+				<input type="radio" id="radio_date_1" name="tab-radio" ng-model="ctrl.dia" ng-true-value="Hoy" ng-false-value="" ng-click="ctrl.obtenerDatosPorDia('Hoy')" checked>
+				<label class="fixed-width" for="radio_date_1">Hoy</label>
+				<input type="radio" id="radio_date_2" name="tab-radio" ng-model="ctrl.dia" ng-true-value="Ayer" ng-false-value="" ng-click="ctrl.obtenerDatosPorDia('Ayer')">
+				<label class="fixed-width" for="radio_date_2">Ayer</label>
+				<button>
+					<i class="fa fa-calendar fa-fw"></i>
+					<span>Febrero 26, 2014</span>
+				</button>
+				
+			</div>
+
+		</div>	
+
+	</header> 
+
+	<div class="datos-resume row">
+		
+		<div class="datos-resume-info col-md-3 col-sm-3">
+			<h3 class="datos-resume-info-titulo">Resumen del día.</h3>
+			<p class="datos-resume-info-resumen" ng-bind="ctrl.resumen"></p>			
+		</div> 
+
+		<div class="datos-resume-info col-md-3 col-sm-3" ng-repeat="grafico in ctrl.graficos">
+			<div class="stat-circle">
+				<h4 ng-bind="grafico.balance"></h4>
+				<canvas id="doughnut" class="chart chart-doughnut"
+				  chart-data="grafico.datos" chart-labels="grafico.etiqueta" chart-colors="grafico.colores">
+				</canvas>
+			</div> 
+			<h4 class="main-stats__subtitle">Balance<br> 
+				<span class="main-stats__resume" ng-bind="grafico.balancePorcentaje"></span>
+			</h4>
+		</div>  
+
+	</div>
+
+	<div class="row">
+
+		<div class="col-md-8">
+		
+			<estadistica></estadistica>
+
+		</div>
+
+		<div class="col-md-4">
+		
+			<grafico></grafico>
+
+		</div>
+
+		<div class="col-md-6 col-lg-7">
+		
+			<mensaje></mensaje>
+
+		</div>
+
+	</div>
+
+</section>

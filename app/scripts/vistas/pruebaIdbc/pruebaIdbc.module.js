@@ -10,6 +10,5 @@
     * Módulo principal de la aplicación pruebaIdbc.
     **/
     angular
-        .module('pruebaIdbc', ['navbar', 'informacionUsuario', 'ngMdIcons']);
-
+        .module('pruebaIdbc', ['navbar', 'informacionUsuario', 'dashboard', 'serviciosHttp', 'ui.router', 'chart.js']);
 })();
