@@ -1,0 +1,25 @@
+<article class="componente">
+		
+	<header class="componente-header">
+
+		<div class="componente-titulo"> 
+			<h3><i class="fa fa-bar-chart fa-fw"></i>
+			Estadísticas</h3>
+		</div>
+
+		<div class="componentes-opciones">
+			<a href="#"><i class="fa fa-refresh fa-fw"></i></a>
+			<a href="#"><i class="fa fa-times fa-fw"></i></a>
+		</div>
+
+	</header>
+
+	<div class="componentes-contenido">
+
+		<p class="graph-number"><span ng-bind="ctrl.visitas"></span> Visitas</p>
+		<canvas id="line" class="chart chart-line grafico-barra" chart-data="ctrl.datos" chart-labels="ctrl.etiquetas" chart-series="ctrl.series" chart-options="ctrl.opciones" chart-dataset-override="datasetOverride" chart-colors="ctrl.colores">
+		</canvas
+
+	</div>
+	
+</article>

@@ -7,13 +7,13 @@
 	</figure>
 	
 	<h2 class="usuario-nombre" ng-bind="::ctrl.nombreUsuario"></h2>
-	<h3 ng-bind="::ctrl.tipoUsuario"></h3>
+	<h3 class="usuario-tipo" ng-bind="::ctrl.tipoUsuario"></h3>
 
 	<ul class="usuario-info-datos">
-		<li ng-repeat="social in ctrl.sociales">
+		<li ng-repeat="social in ctrl.sociales" class="lista-datos">
 			<ng-md-icon icon="{{social.icono}}" style="fill: #fff" size="24"></ng-md-icon>
 			<p ng-bind="::social.valor"></p>
-			<p ng-bind="::social.nuevos"></p>
+			<p class="datos-nuevos" ng-bind="::social.nuevos"></p>
 		</li>
 	</ul>
 

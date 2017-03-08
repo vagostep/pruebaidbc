@@ -1,0 +1,77 @@
+<article class="componente">
+		
+	<header class="componente-header">
+
+		<div class="componente-titulo"> 
+			<h3><i class="fa fa-comments fa-fw"></i>
+			Mensajes</h3>
+		</div>
+
+		<div class="componentes-opciones">
+			<a href="#"><i class="fa fa-refresh fa-fw"></i></a>
+			<a href="#"><i class="fa fa-times fa-fw"></i></a>
+		</div>
+
+	</header>
+
+	<div class="componentes-contenido-mensaje">
+
+		<div class="pestañas">
+
+			<input type="radio" id="mensaje1" name="msgs_tabs" checked>
+			<label for="mensaje1" class="pestañas-pestaña">Nuevos</label>
+			<input type="radio" id="mensaje2" name="msgs_tabs">
+			<label for="mensaje2" class="pestañas-pestaña">Viejos</label>
+			<input type="radio" id="mensaje3" name="msgs_tabs">
+			<label for="mensaje3" class="pestañas-pestaña">Favoritos</label>
+			<div class="clearfix"></div>
+
+			<div class="tabs__content" ng-repeat="tweet in ctrl.tweets">
+				
+				<div>
+					
+					<div class="media mensaje">
+
+						<figure class="pull-left img-mensaje">
+							<img class="media-object" ng-src="{{tweet.user.profile_image_url}}" alt="user">
+						</figure>
+
+						<div class="cuerpo-mensaje">
+
+							<h4 class="titulo-mensaje" ng-bind="tweet.user.name"></h4><h4 class="info-mensaje"><span>desde twitter </span></h4>
+							<p class="mensaje-cuerpo" ng-bind="tweet.text"></p>
+
+							<input type="checkbox" class="msg-control" id="msg-o1" checked>
+
+							<label class="mensaje-control-activador" for="msg-o1"><i class="fa fa-pencil-square-o fa-fw"></i></label>
+
+							<div class="mensaje-control-contenido">
+								<ul class="mensaje-controles">
+									<li><a href="#" onclick="return false;"><i class="fa fa-reply fa-fw"></i> <span>Responder</span></a></li>
+									<li><a href="#" class="set_fav" onclick="return false;"><i class="fa fa-star fa-fw"></i> <span>Fav</span></a></li>
+									<li><a href="#" onclick="return false;"><i class="fa fa-trash fa-fw"></i> <span>Borrar</span></a></li>
+									<li><a href="#" class="close_cntrl" onclick="return false;"><i class="fa fa-arrow-up fa-fw"></i></a></li>
+								</ul>
+
+							</div> 
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div class="message__write">
+				<form action="#">
+					<input type="file" id="add_attachment">
+					<label for="add_attachment"><i class="fa fa-paperclip fa-fw"></i></label><input type="text" placeholder="Escribe un mensaje..."><input type="submit" id="send_msg"><label for="send_msg"><i class="fa fa-arrow-up fa-fw"></i></label>
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+
+</article>

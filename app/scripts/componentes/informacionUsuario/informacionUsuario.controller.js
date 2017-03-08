@@ -12,10 +12,10 @@
         .module('informacionUsuario')
         .controller('InformacionUsuarioController', InformacionUsuarioController);
 
-    InformacionUsuarioController.$inject = [];
+    InformacionUsuarioController.$inject = ['InformacionUsuarioServ', 'InformacionUsuarioDatos'];
 
     /* @ngInject */
-    function InformacionUsuarioController() 
+    function InformacionUsuarioController(InformacionUsuarioServ, InformacionUsuarioDatos) 
     {
         var vm = this;
 
@@ -29,7 +29,7 @@
         *
         * Nombre del usuario activo.
         **/
-        vm.nombreUsuario = "Andrés Díaz";
+        vm.nombreUsuario;
 
         /**
         * @ngdoc property
@@ -39,7 +39,7 @@
         *
         * Tipo de usuario activo.
         **/
-        vm.tipoUsuario = "Administrador";
+        vm.tipoUsuario;
 
         /**
         * @ngdoc property
@@ -49,11 +49,30 @@
         *
         * Objeto que contiene toda la información social del usuario de la aplicación.
         **/
-        vm.sociales = 
-        [
-            {nombre: "amigos", valor: "26k", nuevos: "+14", icono: "person"},
-            {nombre: "compartidos", valor: "1095", nuevos: "+56", icono: "share"},
-            {nombre: "vistas", valor: "428", nuevos:"+38", icono: "visibility"}
-        ];
+        vm.sociales = [];
+
+        //////////////// FIN /////////////////
+
+        //////////////// LLAMADA A FUNCIONES /////////////////        
+
+        obtenerDatosUsuario();
+
+        //////////////// FIN /////////////////
+
+        //////////////// FUNCIONES PRIVADAS /////////////////
+
+        function obtenerDatosUsuario()
+        {
+            var promesa = InformacionUsuarioServ.obtenerDatosUsuario();
+
+            if(promesa !== undefined)
+            {
+                promesa.then(function() {
+                    vm.nombreUsuario = InformacionUsuarioDatos.getNombreUsuario() + " " + InformacionUsuarioDatos.getApellidoUsuario();
+                    vm.tipoUsuario = InformacionUsuarioDatos.getTipoUsuario();
+                    vm.sociales = InformacionUsuarioDatos.getSocial();
+                });
+            }
+        }
     }
 })();

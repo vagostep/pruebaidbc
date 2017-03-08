@@ -12,13 +12,43 @@
         .module('navbar')
         .controller('NavBarController', NavBarController);
 
-    NavBarController.$inject = [];
+    NavBarController.$inject = ['NavBarServ', 'NavBarDatos'];
 
     /* @ngInject */
-    function NavBarController() 
+    function NavBarController(NavBarServ, NavBarDatos) 
     {
         var vm = this;
 
-        vm.menus = [{nombre: 'Dashboard'}];
+        /**
+        * @ngdoc property
+        * @name graficos.controller:GraficosController#graficos 
+        * @propertyOf graficos.controller:GraficosController
+        * @description
+        *
+        * Menus de la barra de navegación.
+        **/
+        vm.menus = undefined;
+
+        //////////////// FIN /////////////////
+
+        //////////////// LLAMADA A FUNCIONES /////////////////        
+
+        obtenerMenus();
+
+        //////////////// FUNCIONES PRIVADAS /////////////////
+
+        function obtenerMenus()
+        {
+            var promesa = NavBarServ.obtenerMenus();
+
+            if(promesa !== undefined)
+            {
+                promesa.then(function() {
+                    vm.menus = NavBarDatos.getMenus();
+                });
+            }
+        }        
+
+        //////////////// FIN /////////////////
     }
 })();

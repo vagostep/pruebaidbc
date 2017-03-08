@@ -1,7 +1,8 @@
 <ul class="navbar">
 
-	<li ng-repeat="menu in ctrl.menus">
+	<li ng-repeat="menu in ctrl.menus" class="navbar-activo">
 		<a class="navbar-link" href="#">
+			<span class="navbar-icono"><i class="fa fa-home fa-1x"></i></span>
 			<span ng-bind="::menu.nombre"></span>
 		</a>
 	</li>

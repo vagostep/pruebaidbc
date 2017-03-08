@@ -1,0 +1,44 @@
+<article class="componente">
+
+	<header class="componente-header">
+
+		<div class="componente-titulo"> 
+			<h3><i class="fa fa-pie-chart fa-fw"></i>
+			Gráfico</h3>
+		</div>
+
+		<div class="componentes-opciones">
+			<a href="#"><i class="fa fa-refresh fa-fw"></i></a>
+			<a href="#"><i class="fa fa-times fa-fw"></i></a>
+		</div>
+
+	</header>
+
+	<div class="componentes-contenido">
+
+		<p class="graph-number"><span ng-bind="ctrl.balanceTotal"></span> Balance Total</p>
+		<div class="pie-container-principal">
+			<div class="pie-number">
+				<h4 ng-bind="ctrl.balance"></h4>	
+			</div>
+			<canvas id="doughnut" class="chart chart-doughnut"
+			  chart-data="ctrl.datos" chart-labels="ctrl.etiquetas" chart-colors="ctrl.colores">
+			</canvas> 
+			
+		</div>
+
+	</div>
+
+	<div class="componentes-contenido">
+		<div class="row">
+			<div class="col-md-4 col-sm-4 col-xs-4 mini-stats" ng-repeat="grafico in ctrl.graficos">
+				<div class="leyenda-circulo {{grafico.color}}"></div> 
+				<p>
+					<span ng-bind="grafico.dato"></span> %<br>
+					<span ng-bind="grafico.etiqueta"></span>
+				</p>
+			</div>
+		</div>
+	</div>
+	
+</article>
