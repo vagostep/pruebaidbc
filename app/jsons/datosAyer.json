@@ -1,0 +1,27 @@
+{
+	"resumen": "Este dia, sucedieron cosas muy buenas. Vivan las empanadas.",
+	"graficos": 
+	[
+        {
+            "color": ["#FFFFFF", "#808080"],
+            "etiqueta": ["Balance", ""],
+            "datos": [90, 10],
+            "balancePorcentaje": "+ 3",
+            "balance": "20K"
+        },
+        {
+            "color": ["#FFFFFF", "#808080"],
+            "etiqueta": ["Miembros", ""],
+            "datos": [26, 74],
+            "balancePorcentaje": "+ 26",
+            "balance": "60K"
+        },
+        {
+            "color": ["#FFFFFF", "#808080"],
+            "etiqueta": ["Órdenes", ""],
+            "datos": [21, 79],
+            "balancePorcentaje": "+ 50",
+            "balance": "6K"
+        }
+    ]
+}

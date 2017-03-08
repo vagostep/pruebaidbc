@@ -1,0 +1,25 @@
+{
+	"colores": ["#1C7DFA", "#52D669", "#FF3A2F"],
+	"etiquetas": ["Miembros", "Ventas", "Pérdidas"],
+	"datos": [43, 36, 21],
+	"balance": "+42",
+	"balanceTotal": "3.424",
+	"graficos": 
+	[
+        {
+            "color": "azul",
+            "etiqueta": "Miembros",
+            "dato": 43
+        },
+        {
+            "color": "verde",
+            "etiqueta": "Ventas",
+            "dato": 36
+        },
+        {
+            "color": "rojo",
+            "etiqueta": "Pérdidas",
+            "dato": 21
+        }
+    ]
+}

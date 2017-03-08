@@ -1,0 +1,27 @@
+{
+	"resumen": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.",
+	"graficos": 
+	[
+        {
+            "color": ["#FFFFFF", "#808080"],
+            "etiqueta": ["Balance", ""],
+            "datos": [46, 54],
+            "balancePorcentaje": "+ 43",
+            "balance": "16K"
+        },
+        {
+            "color": ["#FFFFFF", "#808080"],
+            "etiqueta": ["Miembros", ""],
+            "datos": [66, 34],
+            "balancePorcentaje": "+ 65",
+            "balance": "194K"
+        },
+        {
+            "color": ["#FFFFFF", "#808080"],
+            "etiqueta": ["Órdenes", ""],
+            "datos": [21, 79],
+            "balancePorcentaje": "+ 25",
+            "balance": "76K"
+        }
+    ]
+}

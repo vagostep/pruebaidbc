@@ -1,0 +1,26 @@
+{
+	"nombreUsuario": "Andrés", 
+	"apellidoUsuario": "Díaz", 
+	"tipoUsuario": "Administrador",
+	"social": 
+	[
+		{
+	    	"nombre": "amigos", 
+	    	"valor": "26k", 
+			"nuevos": "+14", 
+			"icono": "person"
+		},
+	    {
+	    	"nombre": "compartidos", 
+	    	"valor": "1095", 
+	    	"nuevos": "+56", 
+	    	"icono": "share"
+	    },
+	    {
+	    	"nombre": "vistas", 
+	    	"valor": "428", 
+	    	"nuevos":"+38", 
+	    	"icono": "visibility"
+	    }
+	]
+} 

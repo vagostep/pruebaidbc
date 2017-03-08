@@ -1,0 +1,42 @@
+{
+	"series": 
+	[
+		"Series A",
+		"Series B"
+	],
+	"etiquetas":
+	[
+		"", "2016", "Febrero", "Marzo", "Abril", "Mayo", "Junio", ""
+	],
+	"datos":
+	[
+		[ null, 40, 20, 30, 60, 40, 80, null],
+		[ null, 80, 72, 80, 50, 28, 20, null]
+	],
+	"colores":
+	[
+		"#1C7DFA", "#52D669"
+	],
+	"opciones": 
+	{
+        "scales": 
+        {
+            "yAxes": 
+            [
+            {
+              "id": "y-axis-1",
+              "type": "linear",
+              "display": true,
+              "position": "left"
+            },
+            {
+              "id": "y-axis-2",
+              "type": "linear",
+              "display": true,
+              "position": "right"
+            }
+            ]
+        }
+    },
+    "visitas": "6,184"
+}
