@@ -22,7 +22,7 @@
         return {
             initialize: function() {
                 //initialize OAuth.io with public key of the application
-                OAuth.initialize('439IdaYkWKdC1xvI-QeeyrQOESk');
+                OAuth.initialize('NbOeX7jxZRMBjixhnpziSnieBGk');
                 //try to create an authorization result when the page loads,
                 // this means a returning user won't have to click the twitter button again
                 authorizationResult = OAuth.create("twitter");
