@@ -9,35 +9,60 @@
 
 		<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />   
 		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
 
 	</head>
 
 	<body ng-app="pruebaIdbc">
 
-		<div class="contenedor">
-			
-			<aside class="sidebar">
-
-				<informacion-usuario></informacion-usuario>
-
-				<nav-bar></nav-bar>
-
-		</aside>
-
-	</div>
+		<ui-view></ui-view>
 		
 		<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
 		<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
 		<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-		<script type="text/javascript" src="bower_components/angular-material-icons/angular-material-icons.min.js"></script>
+		<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+		<script type="text/javascript" src="bower_components/oauth-js/dist/oauth.js"></script>
+		<script type="text/javascript" src="bower_components/chart.js/dist/Chart.min.js"></script>
+		<script type="text/javascript" src="bower_components/angular-chart.js/dist/angular-chart.min.js"></script>
+
 
 		<script type="text/javascript" src="scripts/vistas/pruebaIdbc/pruebaIdbc.module.js"></script>
+		<script type="text/javascript" src="scripts/vistas/pruebaIdbc/pruebaIdbc.config.js"></script>
+		<script type="text/javascript" src="scripts/vistas/pruebaIdbc/pruebaIdbc.controller.js"></script>
 
 		<script type="text/javascript" src="scripts/componentes/navbar/navbar.module.js"></script>
 		<script type="text/javascript" src="scripts/componentes/navbar/navbar.controller.js"></script>
 		<script type="text/javascript" src="scripts/componentes/navbar/navbar.component.js"></script>
+		<script type="text/javascript" src="scripts/componentes/navbar/navbar.service.js"></script>
+		<script type="text/javascript" src="scripts/componentes/navbar/navbar.factory.js"></script>
 		<script type="text/javascript" src="scripts/componentes/informacionUsuario/informacionUsuario.module.js"></script>
 		<script type="text/javascript" src="scripts/componentes/informacionUsuario/informacionUsuario.controller.js"></script>
 		<script type="text/javascript" src="scripts/componentes/informacionUsuario/informacionUsuario.component.js"></script>
+		<script type="text/javascript" src="scripts/componentes/informacionUsuario/informacionUsuario.service.js"></script>
+		<script type="text/javascript" src="scripts/componentes/informacionUsuario/informacionUsuario.factory.js"></script>
+		<script type="text/javascript" src="scripts/componentes/estadisticas/estadisticas.module.js"></script>
+		<script type="text/javascript" src="scripts/componentes/estadisticas/estadisticas.controller.js"></script>
+		<script type="text/javascript" src="scripts/componentes/estadisticas/estadisticas.component.js"></script>
+		<script type="text/javascript" src="scripts/componentes/estadisticas/estadisticas.service.js"></script>
+		<script type="text/javascript" src="scripts/componentes/estadisticas/estadisticas.factory.js"></script>
+		<script type="text/javascript" src="scripts/componentes/graficos/graficos.module.js"></script>
+		<script type="text/javascript" src="scripts/componentes/graficos/graficos.controller.js"></script>
+		<script type="text/javascript" src="scripts/componentes/graficos/graficos.component.js"></script>
+		<script type="text/javascript" src="scripts/componentes/graficos/graficos.service.js"></script>
+		<script type="text/javascript" src="scripts/componentes/graficos/graficos.factory.js"></script>
+		<script type="text/javascript" src="scripts/componentes/mensajes/mensajes.module.js"></script>
+		<script type="text/javascript" src="scripts/componentes/mensajes/mensajes.controller.js"></script>
+		<script type="text/javascript" src="scripts/componentes/mensajes/mensajes.component.js"></script>
+		<script type="text/javascript" src="scripts/componentes/mensajes/mensajes.service.js"></script>
+		<script type="text/javascript" src="scripts/componentes/mensajes/mensajes.factory.js"></script>
+		<script type="text/javascript" src="scripts/vistas/dashboard/dashboard.module.js"></script>
+		<script type="text/javascript" src="scripts/vistas/dashboard/dashboard.controller.js"></script>
+		<script type="text/javascript" src="scripts/vistas/dashboard/dashboard.service.js"></script>
+		<script type="text/javascript" src="scripts/vistas/dashboard/dashboard.factory.js"></script>
+		<script type="text/javascript" src="scripts/servicios/twitter/twitter.module.js"></script>
+		<script type="text/javascript" src="scripts/servicios/twitter/twitter.factory.js"></script>
+
+		<script type="text/javascript" src="scripts/servicios/serviciosHttp/serviciosHttp.module.js"></script>		
+		<script type="text/javascript" src="scripts/servicios/serviciosHttp/serviciosHttp.service.js"></script>
 	</body>
 </html>
