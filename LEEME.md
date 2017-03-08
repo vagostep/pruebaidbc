@@ -4,9 +4,10 @@ Aplicación de prueba para IDBC
 
 Como probar en modo desarrollo
 
-1) Ejecutar dentro del directorio del proyecto, a través de la consola el comando <pre>npm install</pre> y luego, el comando <pre>bower install</pre>.
+0) Se debe tener instalado NODE y BOWER
+1) Ejecutar dentro del directorio del proyecto, a través de la consola el comando npm install y luego, el comando bower install.
 Esto le instalará todas las herramientas para el gulp y los plugins que el proyecto utiliza.
-2) En el directorio del proyecto, en la consola ejecutar <pre>gulp serve</pre>
+2) En el directorio del proyecto, en la consola ejecutar gulp serve
 3) En el navegador, ir a la ruta localhost:8000/ e iniciará la aplicación.
 
 Que se hizo en la aplicación
