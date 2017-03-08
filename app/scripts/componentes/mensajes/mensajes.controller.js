@@ -21,7 +21,9 @@
 
         vm.tweets = [];
 
-        //iniciarTwitter()
+        vm.mostrar = false;
+
+        iniciarTwitter()
 
         function iniciarTwitter()
         {
@@ -36,19 +38,5 @@
                 });
             }
         }
-
-        /*TwitterDatos.initialize();
-
-        TwitterDatos.connectTwitter().then(function() {
-            if (TwitterDatos.isReady()) {
-                TwitterDatos.getLatestTweets(3).then(function(data) {
-                    vm.tweets = data;
-                }, function() {
-
-                });
-            } else {
-
-            }
-        });*/
     }
 })();

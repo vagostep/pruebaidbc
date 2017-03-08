@@ -38,14 +38,14 @@
 
 						<div class="cuerpo-mensaje">
 
-							<h4 class="titulo-mensaje" ng-bind="tweet.user.name"></h4><h4 class="info-mensaje"><span>desde twitter </span></h4>
+							<h4 class="titulo-mensaje" ng-bind="tweet.user.name"></h4><h4 class="info-mensaje"><span></span></h4>
 							<p class="mensaje-cuerpo" ng-bind="tweet.text"></p>
 
 							<input type="checkbox" class="msg-control" id="msg-o1" checked>
 
-							<label class="mensaje-control-activador" for="msg-o1"><i class="fa fa-pencil-square-o fa-fw"></i></label>
+							<label class="mensaje-control-activador" for="msg-o1" ng-click="!ctrl.mostrar"><i class="fa fa-pencil-square-o fa-fw"></i></label>
 
-							<div class="mensaje-control-contenido">
+							<div class="mensaje-control-contenido" ng-show="ctrl.mostrar">
 								<ul class="mensaje-controles">
 									<li><a href="#" onclick="return false;"><i class="fa fa-reply fa-fw"></i> <span>Responder</span></a></li>
 									<li><a href="#" class="set_fav" onclick="return false;"><i class="fa fa-star fa-fw"></i> <span>Fav</span></a></li>
